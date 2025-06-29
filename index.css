@@ -15,14 +15,34 @@ body, html {
 }
 
 /* Header & Footer */
-header, footer {
+header {
   background-color: #222;
   padding: 20px;
   text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 header h1 {
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 footer p {
@@ -93,9 +113,38 @@ main {
 }
 
 .lyrics {
-  white-space: pre-wrap;
   font-size: 1rem;
   line-height: 1.6;
+  max-height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.lyric-line {
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 2px 0;
+}
+
+.lyric-line:hover {
+  opacity: 0.8;
+  background-color: rgba(29, 185, 84, 0.1);
+}
+
+.lyric-line.active {
+  opacity: 1;
+  font-weight: bold;
+  color: #1db954;
+  font-size: 1.1rem;
+  transform: scale(1.02);
+  background-color: rgba(29, 185, 84, 0.15);
+  padding: 10px;
+  border-left: 3px solid #1db954;
 }
 
 /* Bungkus player dan lirik agar bisa disusun berdampingan */
