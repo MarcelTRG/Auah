@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playlist Musik Interaktif</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎵 Playlist Musik Interaktif</h1>
+  </header>
+
+  <main>
+  <div class="content-wrapper">
+    <div class="player">
+      <img id="coverImage" src="cover1.jpg" alt="Album Cover" class="cover" />
+      <div class="song-title" id="songTitle">Judul Lagu</div>
+      <audio id="audioPlayer" src="lagu1.mp3"></audio>
+
+      <div class="controls">
+        <button onclick="prevSong()">⏮️ Sebelumnya</button>
+        <button onclick="playSong()">▶️ Play</button>
+        <button onclick="pauseSong()">⏸️ Pause</button>
+        <button onclick="nextSong()">⏭️ Selanjutnya</button>
+      </div>
+    </div>
+
+    <div class="lyrics-container">
+      <h2>Lirik Lagu</h2>
+      <div id="lyrics" class="lyrics">
+        Lirik lagu akan muncul di sini...
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer>
+    <p>&copy; 2025 Musik Interaktif by Lecram JF</p>
+  </footer>
+
+  <script src="func.js"></script>
+</body>
+</html>

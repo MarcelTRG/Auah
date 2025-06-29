@@ -1,0 +1,131 @@
+/* Global Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Footer */
+header, footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Main Content Centered */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Player Style */
+.player {
+  background: #222;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: box-shadow 0.6s ease;
+}
+
+.cover {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.song-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  background-color: #1db954;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #1ed760;
+}
+
+.lyrics-container {
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  background-color: #222;
+  border-radius: 15px;
+  padding: 20px;
+  color: #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.lyrics-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lyrics {
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Bungkus player dan lirik agar bisa disusun berdampingan */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+/* Responsif: ubah jadi vertikal jika layar sempit */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* Glow Effect untuk Player */
+.player.glow {
+  box-shadow:
+    0 0 15px #1db954,
+    0 0 25px #1db954,
+    0 0 40px #1db954;
+  transition: box-shadow 0.5s ease;
+}
