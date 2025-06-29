@@ -2,40 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Penciptaan Playlist
   const playlist = [
     {
-      title: "Lagu 1 - Band A",
+      title: "Lagu 1 - Red Swan",
       file: "Music/lagu1.mp3",
       cover: "Cover/Cover1.png",
-      lyrics: [
-        { time: 0, text: "Ku berjalan di malam gelap tanpa arah dan tujuan" },
-        { time: 5.5, text: "Bintang pun bersinar redup seperti hatiku yang kelam" },
-        { time: 11.2, text: "Rasa rindu datang perlahan menyesakkan dada" },
-        { time: 16.8, text: "Namun bayangmu tetap hilang dalam gelap malam" }
-      ]
-    },
-    {
-      title: "Lagu 2 - Band B",
-      file: "Music/lagu2.mp3",
-      cover: "Cover/Cover2.png",
-      lyrics: [
-        { time: 0, text: "Verse 1 line 1..." },
-        { time: 4, text: "Verse 1 line 2..." },
-        { time: 8, text: "Chorus begins..." }
-      ]
-    },
-    {
-      title: "Lagu 3 - Band C",
-      file: "Music/lagu3.mp3",
-      cover: "Cover/Cover3.png",
-      lyrics: [
-        { time: 0, text: "Opening lyrics..." },
-        { time: 5, text: "Second line..." },
-        { time: 10, text: "Third line..." }
-      ]
-    },
-    {
-      title: "Lagu 4 - Red Swan",
-      file: "Music/lagu4.mp3",
-      cover: "Cover/Cover4.png",
       lyrics: [
         { time: 0, text: "Like the scarlet night veiling the dark" },
         { time: 32, text: "You can hide your fear" },
@@ -69,6 +38,45 @@ document.addEventListener("DOMContentLoaded", function () {
         { time: 240.10, text: "抱きしめて" },
         { time: 243, text: "永遠を" },
         { time: 245.60, text: "Fly into heaven" }
+      ]
+    },
+    {
+      title: "Lagu 2 - My Ordinary Life",
+      file: "Music/lagu2.mp3",
+      cover: "Cover/cover2.jpeg",
+      lyrics: [
+        { time: 44, text: "They tell me keep it simple, I tell them take it slow" },
+        { time: 47, text: "I feed and water an idea so I let it grow" },
+        { time: 49, text: "I tell them take it easy, they laugh and tell me no," },
+        { time: 52, text: "It's cool but I don't see them laughing at my money though" },
+        { time: 55, text: "They spittin facts at me, I'm spittin tracks, catch me?" },
+        { time: 57, text: "I'm spinning gold out my records know you can't combat me" },
+        { time: 61, text: "They tell me jesus walks, I tell them money talks." },
+        { time: 63, text: "Bling got me chill, cause I'm living in an ice box." },
+        { time: 66, text: "They tell me I've been sleepin, I say I'm wide awake" },
+        { time: 68, text: "Tracks hot and ready so they call me mister e-z bake" },
+        { time: 68, text: "They say the grass is greener, I think my grass is dank" },
+        { time: 74, text: "Drivin with a drank on an empty tank to the bank" },
+        { time: 76, text: "Do you feel me? Talk a look inside my brain" },
+        { time: 79, text: "The people always different but it always feel the same" },
+        { time: 82, text: "That's the real me. Pop the champagne" },
+        { time: 84, text: "The haters wanna hurt me and I'm laughin at the pain" },
+        { time: 88, text: "Stayin still, Eyes closed" },
+        { time: 90, text: "Let the world just pass me by" },
+        { time: 93, text: "Pain pills, Nice clothes" },
+        { time: 96, text: "If I fall I think I'll fly" },
+        { time: 98, text: "Touch me, Midas" },
+        { time: 101, text: "Make me part of your design" },
+        { time: 104, text: "None to guide us" },
+        { time: 106, text: "I feel fear for the very last time" },
+        { time: 131, text: "They tell me that I'm special, I smile and shake my head" },
+        { time: 134, text: "I'll give them stories to tell friends about the things I said" },
+        { time: 137, text: "They tell me I'm so humble, I say I'm turning red" },
+        { time: 139, text: "They let me lie to them and don't feel like they've been misled" },
+        { time: 142, text: "They give so much to me, I'm losing touch get me?" },
+        { time: 145, text: "Served on a silver platter, ask for seconds they just let me." },
+        { time: 148, text: "They tell me I'm a god, I'm lost in the facade" },
+        { time: 150, text: "Six feet off the ground at all times I think I'm feelin odd" }
       ]
     }
   ];

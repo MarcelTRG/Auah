@@ -119,6 +119,13 @@ main {
   overflow-y: auto;
   scroll-behavior: smooth;
   padding: 10px;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.lyrics::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .lyric-line {
