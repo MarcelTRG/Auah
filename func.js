@@ -78,7 +78,51 @@ document.addEventListener("DOMContentLoaded", function () {
         { time: 148, text: "They tell me I'm a god, I'm lost in the facade" },
         { time: 150, text: "Six feet off the ground at all times I think I'm feelin odd" }
       ]
-    }
+    },
+    {
+      title: "Lagu 3 - Silence",
+      file: "Music/lagu3.mp3",
+      cover: "Cover/Cover3.png",
+      lyrics: [
+        { time: 7, text: "Talking" },
+        { time: 9, text: "Why's everyone always talking?" },
+        { time: 13, text: "Noise in my head, but it's nonsense" },
+        { time: 18, text: "I can't feel nothing" },
+        { time: 23, text: "Guarded" },
+        { time: 25, text: "Don't overthink how we started" },
+        { time: 29, text: "Knew from the second you walked in" },
+        { time: 33, text: "This could be something" },
+        { time: 38, text: "Everybody's looking for a love to start a riot" },
+        { time: 46, text: "But every time I look in your eyes, the world gets quiet" },
+        { time: 53, text: "So let it go, let it fall, let it fly, and keep on trying" },
+        { time: 61, text: "'Cause I knew I was in love with you when we sat in silence" },
+        { time: 69, text: "🎵🎵🎵" },
+        { time: 85, text: "Dreaming" },
+        { time: 87, text: "I'm wide awake while I'm dreaming" },
+        { time: 91, text: "See in your eyes what you're thinking" },
+        { time: 95, text: "So please don't worry" },
+        { time: 101, text: "Waiting" },
+        { time: 102, text: "Know that I'll always be waiting" },
+        { time: 106, text: "Do you believe what I'm saying?" },
+        { time: 111, text: "I'm in no hurry" },
+        { time: 115, text: "Everybody's looking for a love to start a riot" },
+        { time: 123, text: "But every time I look in your eyes, the world gets quiet" },
+        { time: 131, text: "So let it go, let it fall, let it fly, and keep on trying" },
+        { time: 139, text: "'Cause I knew I was in love with you when we sat in silence" },
+        { time: 147, text: "🎵🎵🎵"},
+        { time: 162, text: "Sat in silence" },
+        { time: 166, text: "Sat in silence~~" },
+        { time: 170, text: "Sat in silence" },
+        { time: 173, text: "When we sat on silence." },
+        { time: 177, text: "Sat in silence" },
+        { time: 181, text: "Sat in silence~~" },
+        { time: 185, text: "Sat in silence" },
+        { time: 188, text: "When we sat on silence." },
+        { time: 193, text: "'Cause I knew I was in love with you when we sat in..." },
+        { time: 198, text: "Silence." }
+      ]
+    },
+
   ];
 
   // Deklarasi Variabel
