@@ -20,6 +20,12 @@
       <div class="song-title" id="songTitle">Judul Lagu</div>
       <audio id="audioPlayer" src="lagu1.mp3"></audio>
 
+      <div class="time-control">
+        <span id="currentTime">0:00</span>
+        <input type="range" id="seekSlider" value="0" min="0" step="1">
+        <span id="totalTime">0:00</span>
+      </div>
+
       <div class="controls">
         <button onclick="prevSong()">⏮️ Sebelumnya</button>
         <button onclick="playSong()">▶️ Play</button>

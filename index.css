@@ -185,3 +185,40 @@ main {
     0 0 40px #1db954;
   transition: box-shadow 0.5s ease;
 }
+
+.time-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+#seekSlider {
+  flex-grow: 1;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: white; /* default sebelum musik diputar */
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+/* Hapus background di track karena akan dikontrol via JS */
+#seekSlider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 5px;
+}
+
+/* Thumb (bulatan geser) */
+#seekSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  background: green;
+  border-radius: 50%;
+  margin-top: -4px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}

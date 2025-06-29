@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { time: 185, text: "Sat in silence" },
         { time: 188, text: "When we sat on silence." },
         { time: 193, text: "'Cause I knew I was in love with you when we sat in..." },
-        { time: 198, text: "Silence." }
+        { time: 197, text: "Silence." }
       ]
     },
 
@@ -222,6 +222,14 @@ document.addEventListener("DOMContentLoaded", function () {
     playSong();
   }
 
+  function updateSliderColor() {
+    const value = seekSlider.value;
+    const max = seekSlider.max;
+    const percentage = (value / max) * 100;
+    seekSlider.style.background = `linear-gradient(to right, green 0%, green ${percentage}%, white ${percentage}%, white 100%)`;
+  }
+
+
   // Load song pertama saat halaman dibuka
   loadSong(currentSongIndex);
 
@@ -238,4 +246,32 @@ document.addEventListener("DOMContentLoaded", function () {
   window.pauseSong = pauseSong;
   window.nextSong = nextSong;
   window.prevSong = prevSong;
+
+  const seekSlider = document.getElementById("seekSlider");
+  const currentTimeDisplay = document.getElementById("currentTime");
+  const totalTimeDisplay = document.getElementById("totalTime");
+
+  audio.addEventListener('loadedmetadata', () => {
+    seekSlider.max = Math.floor(audio.duration);
+    totalTimeDisplay.textContent = formatTime(audio.duration);
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    seekSlider.value = Math.floor(audio.currentTime);
+    currentTimeDisplay.textContent = formatTime(audio.currentTime);
+    updateLyrics(); // Sudah ada di kodenya
+    updateSliderColor();
+  });
+
+  seekSlider.addEventListener('input', () => {
+    audio.currentTime = seekSlider.value;
+    updateLyrics(); // Sinkronkan lirik saat slider digeser
+  });
+
+  function formatTime(seconds) {
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
+  }
+
 });
