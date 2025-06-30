@@ -1,0 +1,172 @@
+/* Global Layout */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header & Footer */
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    footer {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      background: #555;
+      border-radius: 8px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .content-wrapper {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Song Title */
+    #title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    /* Cover Image */
+    #cover {
+      width: 100%;
+      max-width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      background: #333;
+      border: 2px solid #555;
+    }
+
+    /* Song Info Bar */
+    .song-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      flex-wrap: wrap;
+    }
+
+    .song-info p {
+      margin: 0;
+      color: #ccc;
+    }
+
+    .song-info strong {
+      color: #fff;
+      margin-right: 5px;
+    }
+
+    .song-info span:not(.divider) {
+      color: #ccc;
+    }
+
+    .divider {
+      color: #666;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Description */
+    .description-section {
+      text-align: left;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .description-section h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    #description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #title {
+        font-size: 2rem;
+      }
+
+      .song-info {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .divider {
+        display: none;
+      }
+
+      .song-info p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #title {
+        font-size: 1.5rem;
+      }
+
+      #cover {
+        height: 300px;
+      }
+
+      .content-wrapper {
+        padding: 20px;
+      }
+    }

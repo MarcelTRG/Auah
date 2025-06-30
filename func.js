@@ -133,6 +133,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const lyricsContainer = document.getElementById("lyrics");
   const wrapper = document.querySelector('.player');
 
+  // Buat coverImage bisa diklik untuk pindah halaman
+  coverImage.style.cursor = 'pointer';
+  coverImage.addEventListener('click', function () {
+    const song = playlist[currentSongIndex];
+    localStorage.setItem("selectedTitle", song.title);
+    window.location.href = "detail.html";
+  });
+
   // Fungsi untuk memuat lagu
   function loadSong(index) {
     const song = playlist[index];
@@ -228,7 +236,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const percentage = (value / max) * 100;
     seekSlider.style.background = `linear-gradient(to right, green 0%, green ${percentage}%, white ${percentage}%, white 100%)`;
   }
-
 
   // Load song pertama saat halaman dibuka
   loadSong(currentSongIndex);
